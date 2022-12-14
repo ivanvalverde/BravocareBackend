@@ -11,7 +11,7 @@ export type ValidatedResponse = {
   statusCode: number;
   message: string;
   error: boolean;
-  data?: Shifts[] | OverlapShifts;
+  data?: Shifts[] | OverlapShifts | RemainingSpots[] | CoWorkers[];
 };
 
 export type Time = {
@@ -25,3 +25,13 @@ export type OverlapShifts = {
   overlapTime: number;
   exceedsOverlapThreshold: boolean;
 };
+
+export type RemainingSpots = {
+  facility_id: number;
+  nurse_type: string;
+  nurses_needed: string;
+};
+
+export type CoWorkers = {
+  'co-workers': string;
+}

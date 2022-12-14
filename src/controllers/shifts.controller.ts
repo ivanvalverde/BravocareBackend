@@ -1,6 +1,6 @@
 import { Response } from "express";
-import { ShiftsService } from "../services/shifts.service";
-import { EmptyRequest, OverlapShiftsRequest } from "../constants/interfaces";
+import { ShiftsService } from "../services";
+import { EmptyRequest, OverlapShiftsRequest } from "../constants";
 
 class ShiftsController {
   public shiftsService = new ShiftsService();

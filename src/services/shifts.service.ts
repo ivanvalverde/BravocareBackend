@@ -1,7 +1,5 @@
 import { getShift, getShifts } from "../config/queries";
-import { STATUS_MESSAGES } from "../constants/enums";
-import { OverlapShiftsRequest } from "../constants/interfaces";
-import { Shifts, Time, ValidatedResponse } from "../constants/types";
+import { OverlapShiftsRequest, Shifts, STATUS_MESSAGES, Time, ValidatedResponse } from "../constants";
 import { validation } from "../utils/validation";
 
 export class ShiftsService {
