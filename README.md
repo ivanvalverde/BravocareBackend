@@ -25,6 +25,12 @@ First, it's important to create a similar file to the .env.example to store some
 
 ### Running the project
 
+First you need to install the dependencies of the project by running this command on the shell:
+
+```bash
+npm install
+```
+
 ```bash
 npm run dev
 ```
