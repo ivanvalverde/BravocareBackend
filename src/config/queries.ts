@@ -44,7 +44,6 @@ export const getRemainingSpots = async (): Promise<RemainingSpots[]> => {
 }
 
 export const getCoWorkers = async (facilityName = 'Facility C', nurseName = 'Anne'): Promise<CoWorkers[]> => {
-    console.log(facilityName, nurseName)
     return await sql<CoWorkers[]>
     `select distinct nurse_name as "co-workers" from nurses n 
     inner join nurse_hired_jobs nhj on n.nurse_id = nhj.nurse_id 
